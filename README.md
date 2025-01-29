@@ -1,46 +1,45 @@
-# Projekt: League of Legends Štatistiky
+# Project: League of Legends Statistics
 
-Program napísaný v jazyku C, ktorý umožňuje vypočítať štatistiky z LoL a zobraziť 
-ich v podobe štyroch tabuliek a jedného SVG grafu.
+A program written in C that calculates statistics from LoL and displays them in the form of four tables and one SVG graph.
 
-## Štruktúra projektu
+## Project Structure
 
-Projekt sa skladá z troch C súborov, dvoch hlavičkových súborov a jedného makefile
+The project consists of three C files, two header files, and one makefile:
 
-- `lolstatsproj.c` – súbor obsahujúci hlavnú logiku programu
+- `lolstatsproj.c` – the file containing the main logic of the program
 
-- `nacitat.h` – hlavičkový súbor, v ktorom sú definované štruktúry, globálne premenné a metódy pre nacitat.c
-- `nacitat.c` – súbor zodpovedný za načítanie a spracovanie vstupných dát
+- `nacitat.h` – the header file defining structures, global variables, and methods for `nacitat.c`
+- `nacitat.c` – the file responsible for loading and processing input data
 
-- `html.h` - hlavičkový súbor, ktorý obsahuje cestu k výpočtu štatistík v rámci metódy
-- `html.c` – súbor na generovanie výstupnej HTML stránky.
+- `html.h` – the header file containing the method for calculating statistics
+- `html.c` – the file for generating the output HTML page
 
-- `makefile` – súbor na zlinkovanie súborov a vytvorenia spustiteľného súboru
+- `makefile` – the file for linking files and creating the executable
 
-## Požiadavky
+## Requirements
 
-Pred spustením projektu sa uistite, že máte nainštalované nasledujúce nástroje:
+Before running the project, make sure you have the following tools installed:
 
-- **GCC**: Pre kompiláciu C súborov
-- **Make**: Pre kompilovanie projektu
+- **GCC**: For compiling C files
+- **Make**: For compiling the project
 
-## Inštalácia a spustenie
+## Installation and Running
 
-1. Otvorte terminál (bash)
-2. Uistite sa, že máte všetky súbory projektu v rovnakom adresári
-3. Spustite nasledujúci príkaz na skompilovanie projektu:
-    
+1. Open a terminal (bash)
+2. Make sure all project files are in the same directory
+3. Run the following command to compile the project:
+
     - make
     
-   Tento príkaz vytvorí spustiteľný súbor s názvom `lolstats`
+   This will create an executable file named `lolstats`
    
-4. Na spustenie programu použite príkaz:
+4. To run the program, use the following command:
     
     - ./lolstats zaznamy.txt hraci.txt stats.html
     
-   - `zaznamy.txt` – vstupný súbor obsahujúci zápisy zo zápasov
-   - `hraci.txt` – vstupný súbor obsahujúci zoznam hráčov
-   - `stats.html` – výstupný súbor, kde bude generovaný HTML report s štatistikami
+   - `zaznamy.txt` – input file containing match records
+   - `hraci.txt` – input file containing a list of players
+   - `stats.html` – output file where the HTML report with statistics will be generated
 
 
 
